@@ -26,9 +26,19 @@ function sum1(){
   $num1 = 100;
   $num2 = 200;
   $total=$num1+$num2;
-  echo $total;
+  echo "\n$total\n";
 
 }
+sum1();
+
+function sum2(){
+  global $number1,$number2;
+  $add = $number1+$number2;
+  echo"The result is $add";
+}
+sum2();
+
+
 
 
 
